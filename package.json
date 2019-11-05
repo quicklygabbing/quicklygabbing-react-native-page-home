@@ -1,0 +1,19 @@
+
+{
+  "name": "quicklygabbing-react-native-page-home",
+  "version": "0.0.2",
+  "description": "quicklygabbing-react-native-page-home",
+  "main": "index.js",
+  "homepage": "https://github.com/quicklygabbing/quicklygabbing-react-native-page-home",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quicklygabbing"
+  ],
+  "author": "quicklygabbing",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "0.59.10"
+  }
+}
