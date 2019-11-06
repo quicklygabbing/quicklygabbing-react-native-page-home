@@ -1,6 +1,3 @@
 
 import { NativeModules } from 'react-native';
-
-const { RNNativeToastLibrary } = NativeModules;
-
-export default RNNativeToastLibrary;
+module.exports = NativeModules.QuicklyGabbingReactNativePageHome;
