@@ -6,7 +6,9 @@
  */
 
 import React, {Component} from 'react';
-import {View, StyleSheet, Text, TextInput} from 'react-native';
+import {View, StyleSheet, Text, TextInput, NativeModules} from 'react-native';
+
+var QGHomeModule = NativeModules.QuicklyGabbingReactNativePageHome;
 
 type Props = {};
 export default class QuicklyGabbingReactNativeHomePage extends Component<Props> {
@@ -14,6 +16,14 @@ export default class QuicklyGabbingReactNativeHomePage extends Component<Props> 
   constructor(props) {
     super(props);
     this.state = {text: ''};
+    QGHomeModule.sayHi(
+      (err) => {
+        console.log(err);
+      },
+      (msg) => {
+        console.log(msg);
+      }
+    );
   }
   render() {
     return (
